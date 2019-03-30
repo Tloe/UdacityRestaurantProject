@@ -32,6 +32,8 @@ const restaurantCache = [
   '/img/10_2x.jpg',
 ];
 
+/* Setup the cache on install
+ */
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(staticCacheVersion)
@@ -41,12 +43,14 @@ self.addEventListener('install', event => {
   );
 });
 
+/* If the cache version has updated install a new one
+ */
 self.addEventListener('activate', event =>{
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.filter(cacheName => {
-          return cacheName.startsWith('Restaurant-Cache') && cacheName != staticCacheVersion;
+          return cacheName.startsWith('Restaurant-Cache-') && cacheName != staticCacheVersion;
         }).map(cacheName => {
           return caches.delete(cacheName);
         }));
@@ -54,6 +58,8 @@ self.addEventListener('activate', event =>{
   );
 });
 
+/* Interrupt fetches and check if the content is in cache or fetch it
+ */
 self.addEventListener('fetch', event =>{
   event.respondWith(
     caches.match(event.request).then(response => {

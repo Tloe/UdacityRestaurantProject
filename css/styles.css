@@ -82,18 +82,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   letter-spacing: 10px;
 }
 
-/* nav h1 { */
-/*   margin: auto; */
-/* } */
-
-/* nav h1 a { */
-/*   color: #fff; */
-/*   font-size: 14pt; */
-/*   font-weight: 200; */
-/*   letter-spacing: 10px; */
-/*   text-transform: uppercase; */
-/* } */
-
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
@@ -259,8 +247,6 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 
 #restaurant-container, #reviews-container {
-  /* border-bottom: 1px solid #d9d9d9; */
-  /* border-top: 1px solid #fff; */
   width: 90%;
   margin: 0 auto;
 }
