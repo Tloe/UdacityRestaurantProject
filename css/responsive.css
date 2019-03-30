@@ -1,0 +1,33 @@
+/* Bellow 600px*/
+@media screen and (min-width: 600px) {
+
+
+}
+
+/* Between 600px and 768 */
+@media screen and (min-width: 768px) {
+  #restaurants-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #restaurant-nav h1 a {
+    font-size: 2.0em;
+  }
+
+  #breadcrumb {
+    font-size: 1.5em;
+  }
+}
+
+/* Above 1850px */
+@media screen and (min-width: 1900px) {
+  #maincontent {
+    width: 1900px;
+    margin: 0 auto;
+  }
+}
+
+
