@@ -32,7 +32,7 @@ a img{
   border: none 0px #fff;
 }
 
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, div {
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, div, ul {
   display: block;
   box-sizing: border-box;
 }
@@ -69,21 +69,27 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 #restaurant-nav {
   width: 100%;
+}
+
+#restaurant-nav h1 {
   background-color: #252831;
-  font-weight: 200;
   padding: 20px 0;
-  text-align:center;
-  text-transform: uppercase;
 }
 
 #restaurant-nav h1 a {
   color: #fff;
+  font-weight: 200;
   font-size: 0.6em;
   letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  margin: auto 0;
+  width: 100%;
 }
 
 #breadcrumb {
-    padding: 10px 40px 16px;
+    /* padding: 10px 40px 16px; */
     list-style: none;
     background-color: #eee;
     font-size: 1em;
